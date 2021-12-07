@@ -16,5 +16,5 @@ spec:
             command:
             - /bin/sh
             - -c
-            - date ; curl -i http://local.host:31000/actuator/health/
+            - curl -i http://clusterIP:31000/actuator/health/
           restartPolicy: OnFailure
