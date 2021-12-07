@@ -1,7 +1,8 @@
 apiVersion: batch/v1
 kind: CronJob
 metadata:
-  name: Cron_request
+  name: cronrequest
+  namespace: aplicacao
 spec:
   schedule: "*/3 * * * *"
   jobTemplate:
@@ -9,11 +10,11 @@ spec:
       template:
         spec:
           containers:
-          - name: App_2
+          - name: cronrequest
             image: busybox
             imagePullPolicy: IfNotPresent
             command:
             - /bin/sh
             - -c
-            - date; curl http://192.168.49.2:31000/actuator 
+            - date ; curl http://local.host:31000/actuator/health
           restartPolicy: OnFailure
