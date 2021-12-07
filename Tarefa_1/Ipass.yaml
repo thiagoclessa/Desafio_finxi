@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ipaas
+  namespace: aplicacao
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ipaas
+  template:
+    metadata:
+      name: ipaas
+      labels:
+        app: ipaas
+    spec:
+      containers:
+      - name: ipaas
+        image: thiagolessa/ipaas:latest
+        ports:
+        - name: ipaas
+          containerPort: 8080
