@@ -16,5 +16,5 @@ spec:
             command:
             - /bin/sh
             - -c
-            - date ; curl http://local.host:31000/actuator/health
+            - date ; curl -s -o /dev/null -I -w "%{http_code}" http://local.host:31000/actuator/health
           restartPolicy: OnFailure
