@@ -87,8 +87,8 @@ Configurando o monitoramento:
 
 ```bash
 cd Desafio_finxi/Tarefa_3/
-kubectl create namespace monitoramento
-kubectl create -f k8s-k8s-prometheus/ --namespace=monitoramento
-kubectl create -f kube-state-metrics/ --namespace=monitoramento
-kubectl create -f k8s-grafana/ --namespace=monitoramento
+kubectl create namespace monitoring
+kubectl create -f k8s-k8s-prometheus/ --namespace=monitoring
+kubectl create -f kube-state-metrics/ --namespace=monitoring
+kubectl create -f k8s-grafana/ --namespace=monitoring
 ```
