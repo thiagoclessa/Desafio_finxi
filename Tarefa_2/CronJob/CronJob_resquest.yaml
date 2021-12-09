@@ -16,5 +16,5 @@ spec:
             command:
             - /bin/sh
             - -c
-            - curl -i http://clusterIP:31000/actuator/health/
+            - date; wget http://ipaas:8080/actuator/health/
           restartPolicy: OnFailure
