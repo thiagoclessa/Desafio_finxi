@@ -16,5 +16,5 @@ spec:
             command:
             - /bin/sh
             - -c
-            - date; wget http://ipaas:8080/actuator/health/
+            - wget -r http://ipaas:8080/actuator/health/
           restartPolicy: OnFailure
