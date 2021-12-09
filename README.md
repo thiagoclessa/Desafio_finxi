@@ -72,6 +72,8 @@ cd Desafio_finxi/Tarefa_1/
 kubectl create namespace aplicacao
 kubectl create -f Ipaas/ --namespace=aplicacao
 ```
+Documentação oficial do Kubernetes:
+https://kubernetes.io/pt-br/
 
 ## Tarefa 2:
 
@@ -87,8 +89,31 @@ Configurando o monitoramento:
 
 ```bash
 cd Desafio_finxi/Tarefa_3/
-kubectl create namespace monitoring
-kubectl create -f k8s-k8s-prometheus/ --namespace=monitoring
-kubectl create -f kube-state-metrics/ --namespace=monitoring
-kubectl create -f k8s-grafana/ --namespace=monitoring
+kubectl create namespace monitoramento
+kubectl create -f k8s-k8s-prometheus/ --namespace=monitoramento
+kubectl create -f kube-state-metrics/ --namespace=monitoramento
+kubectl create -f k8s-grafana/ --namespace=monitoramento
 ```
+As configurações do grafana podem ser realizada baixando o template de monitoramento conforme a documentação offical
+
+https://prometheus.io/docs/visualization/grafana/
+
+## Custos para manter o projeto:
+
+Apos analise de caculos realizados atraves do https://calculator.aws/ 
+
+O melhor custo beneficio foi o de utilizar a solução AWS (EKS)
+Pois o serviço se torna auto-gerencial e escalavel ao cliente:
+
+Custo inicial:
+0,00 USD
+
+Custo mensal:
+73,00 USD
+
+Custo total por 12 meses:
+876,00 USD
+
+
+![Logo](https://github.com/thiagoclessa/Desafio_finxi/blob/main/Cluster_EKS.PNG)
+
