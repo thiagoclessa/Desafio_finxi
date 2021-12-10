@@ -2,6 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ipaas-service
+  namespace: aplicacao
 spec:
   type: NodePort
   selector:
