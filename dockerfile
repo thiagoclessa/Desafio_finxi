@@ -16,6 +16,11 @@ RUN apt-get install -y libcurl4-gnutls-dev libfontconfig1-dev libgtk-3-0 libxss1
 # Install insomnia
 RUN npm i -g insomnia-inso
 
+# Install Safira
+RUN npm install -g node-gyp
+RUN npm install -g @vfipaas/safira-cli
+
 #instalação do java
 
 RUN apt-get install openjdk-17-jre -y
+
