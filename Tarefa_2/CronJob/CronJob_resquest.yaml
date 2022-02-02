@@ -11,10 +11,10 @@ spec:
         spec:
           containers:
           - name: cronrequest
-            image: curl
+            image: thiagolessa/ipaas_curl:1.0
             imagePullPolicy: IfNotPresent
             command:
             - /bin/sh
             - -c
-            - curl -X POST http://ipaas-service:8080/log
+            - curl -X POST http://ipaas-service:80/log
           restartPolicy: OnFailure
