@@ -11,7 +11,7 @@ spec:
         spec:
           containers:
           - name: cronrequest
-            image: thiagolessa/ipaas_curl:1.0
+            image: appropriate/curl:latest
             imagePullPolicy: IfNotPresent
             command:
             - /bin/sh
