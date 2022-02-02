@@ -11,10 +11,10 @@ spec:
         spec:
           containers:
           - name: cronrequest
-            image: busybox
+            image: curl
             imagePullPolicy: IfNotPresent
             command:
             - /bin/sh
             - -c
-            - wget -S http://ipaas-service:8080/actuator/health/
+            - curl -X POST http://ipaas-service:8080/log
           restartPolicy: OnFailure
