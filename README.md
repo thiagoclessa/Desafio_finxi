@@ -115,7 +115,11 @@ O melhor custo beneficio foi o de utilizar a solução AWS (EKS)
 Pois o serviço se torna auto-gerencial e escalavel:
 Configuração desse projeto:
 1 EKS Cluster:
+
+
 2 instância tipo t2.small:
+
+
 1 load balancer para a aplicação:
 
 Custo inicial:
