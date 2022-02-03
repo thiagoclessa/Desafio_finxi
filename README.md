@@ -116,9 +116,9 @@ Pois o serviço se torna auto-gerencial e escalavel:
 Configuração desse projeto:
 
 ```bash
-1 EKS Cluster
-2 Instância Tipo t2.small
-1 Load Balancer 
+01 EKS Cluster
+02 Instância type t2.small
+01 Load Balancer 
 ```
 
 Custo inicial:
