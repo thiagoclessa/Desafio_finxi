@@ -56,7 +56,16 @@ source <(kubectl completion bash)
 echo "source <(kubectl completion bash)" >> ~/.bashrc
 
 ```
+## Cloud:
 
+Realizada a subida da infra na Cloud AWS com o terraform:
+```bash
+git clone https://github.com/thiagoclessa/Desafio_finxi.git
+cd Desafio_finxi/Tarefa_1/cloud/terraform/
+terraform init
+terraform plan 
+terraform apply
+```
 ## Tarefa 1:
 
 Realizada a configuração do dockerfile:
@@ -80,7 +89,7 @@ https://kubernetes.io/pt-br/
 Subindo a Cron de execução de 3 em 3 minutos para o Kubenets no projeto aplicacao
 ```bash
 cd Desafio_finxi/Tarefa_2/
-kubectl create -f CronJob/ --namespace=aplicacao
+kubectl create -f CronJob/ 
 ```
 
 ## Tarefa 3:
@@ -103,16 +112,16 @@ https://prometheus.io/docs/visualization/grafana/
 Apos analise de caculos realizados atraves do https://calculator.aws/ 
 
 O melhor custo beneficio foi o de utilizar a solução AWS (EKS)
-Pois o serviço se torna auto-gerencial e escalavel ao cliente:
+Pois o serviço se torna auto-gerencial e escalavel ao cliente utilizando instância tipo t2.small e um load balancer para a aplicação:
 
 Custo inicial:
 0,00 USD
 
 Custo mensal:
-73,00 USD
+105,28 USD
 
 Custo total por 12 meses:
-876,00 USD
+1.263.36 USD
 
 
 ![Logo](https://github.com/thiagoclessa/Desafio_finxi/blob/main/Cluster_EKS.PNG)
