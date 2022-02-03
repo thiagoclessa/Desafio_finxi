@@ -32,6 +32,19 @@ resource "aws_security_group" "worker_group_mgmt_one" {
     ]
   }
 }
+resource "kubernetes_namespace" "monitoramento" {
+  metadata {
+    annotations = {
+      name = "monitoramento"
+    }
+
+    labels = {
+      mylabel = "monitoramento"
+    }
+
+    name = "monitoramento"
+  }
+}
 
 resource "aws_security_group" "all_worker_mgmt" {
   name_prefix = "all_worker_management"
