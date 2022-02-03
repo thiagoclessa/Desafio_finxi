@@ -114,11 +114,12 @@ Apos analise de caculos realizados atraves do https://calculator.aws/
 O melhor custo beneficio foi o de utilizar a solução AWS (EKS)
 Pois o serviço se torna auto-gerencial e escalavel:
 Configuração desse projeto:
+
+```bash
 1 EKS Cluster
-
-2 instância tipo t2.small
-
-1 load balancer para a aplicação
+2 Instância Tipo t2.small
+1 Load Balancer 
+```
 
 Custo inicial:
 0,00 USD
