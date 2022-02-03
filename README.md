@@ -61,7 +61,7 @@ echo "source <(kubectl completion bash)" >> ~/.bashrc
 Realizada a subida da infra na Cloud AWS com o terraform:
 ```bash
 git clone https://github.com/thiagoclessa/Desafio_finxi.git
-cd Desafio_finxi/Tarefa_1/cloud/terraform/
+cd Desafio_finxi/Tarefa_1/terraform/
 terraform init
 terraform plan 
 terraform apply
