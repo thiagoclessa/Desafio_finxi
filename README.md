@@ -112,7 +112,11 @@ https://prometheus.io/docs/visualization/grafana/
 Apos analise de caculos realizados atraves do https://calculator.aws/ 
 
 O melhor custo beneficio foi o de utilizar a solução AWS (EKS)
-Pois o serviço se torna auto-gerencial e escalavel ao cliente utilizando instância tipo t2.small e um load balancer para a aplicação:
+Pois o serviço se torna auto-gerencial e escalavel:
+Configuração desse projeto:
+1 EKS Cluster
+2 instância tipo t2.small
+1 load balancer para a aplicação:
 
 Custo inicial:
 0,00 USD
