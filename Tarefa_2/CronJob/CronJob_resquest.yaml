@@ -16,5 +16,5 @@ spec:
             command:
             - /bin/sh
             - -c
-            - curl -X POST http://ipaas-service:80/log
+            - curl -X POST http://ipaas-service:80/rest/log
           restartPolicy: OnFailure
