@@ -97,11 +97,11 @@ kubectl create -f CronJob/
 Configurando o monitoramento:
 
 ```bash
-cd Desafio_finxi/Tarefa_3/
-kubectl create namespace monitoramento
-kubectl create -f k8s-k8s-prometheus/ --namespace=monitoramento
-kubectl create -f kube-state-metrics/ --namespace=monitoramento
-kubectl create -f k8s-grafana/ --namespace=monitoramento
+cd Desafio_finxi/Tarefa_3/Monitoramento/
+kubectl create namespace monitoring
+kubectl create -f k8s-k8s-prometheus/ 
+kubectl create -f kube-state-metrics/ 
+kubectl create -f k8s-grafana/ 
 ```
 As configurações do grafana podem ser realizada baixando o template de monitoramento conforme a documentação offical
 
