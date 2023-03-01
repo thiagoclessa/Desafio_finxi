@@ -4,7 +4,6 @@ metadata:
   name: ipaas-service
   namespace: aplicacao
 spec:
-  type: NodePort
   selector:
     app: ipaas
   ports:
